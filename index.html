@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axomiya Mega Bazaar - Flipkart Style</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Roboto,Arial,sans-serif}
+.top{background:#2874f0;color:white;padding:10px 15px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:99}
+.logo{font-weight:900;font-style:italic;font-size:19px}
+.search{flex:1;background:white;display:flex;border-radius:2px;overflow:hidden}
+.search input{flex:1;padding:10px;border:none;outline:none}
+.search button{background:white;border:none;padding:0 12px;color:#2874f0;font-weight:bold}
+.login-btn{background:white;color:#2874f0;border:none;padding:6px 20px;font-weight:700;border-radius:2px}
+.cats{background:white;display:flex;gap:18px;overflow-x:auto;padding:12px 15px;box-shadow:0 2px 4px rgba(0,0,0,.1)}
+.cats div{text-align:center;font-size:11px;font-weight:600;min-width:65px}
+.cats span{font-size:26px;display:block}
+.section{background:white;margin:8px 0;padding:14px}
+.section h2{font-size:17px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(min-width:600px){.grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+.card{border:1px solid #f0f0f0;border-radius:4px;padding:10px;text-align:center}
+.card img{width:100%;height:125px;object-fit:contain}
+.card h4{font-size:13px;margin:7px 0 2px}
+.card p{color:#388e3c;font-size:11px}
+.card .price{color:#000;font-weight:700;font-size:14px;margin-top:4px}
+.offer{background:#26a541;color:white;padding:2px 5px;font-size:9px;border-radius:2px}
+</style>
+</head>
+<body style="background:#f1f3f6">
+<div class="top">
+<div class="logo">Axomiya Bazaar</div>
+<div class="search"><input placeholder="Search Gamosa, Tea, Goggles..."><button>🔍</button></div>
+<button class="login-btn">Login</button>
+<div>🛒</div>
+</div>
 
+<div class="cats">
+<div><span>🧣</span>Gamosa</div>
+<div><span>🕶️</span>Goggles</div>
+<div><span>🍵</span>Tea</div>
+<div><span>🎍</span>Jaapi</div>
+<div><span>🥭</span>Pickle</div>
+<div><span>👘</span>Silk</div>
+</div>
+
+<div class="section">
+<h2>🔥 Trending Goggles - ₹599 <span style="background:#2874f0;color:white;padding:4px 10px;border-radius:20px;font-size:11px">VIEW ALL</span></h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400">
+<h4>Premium Black Goggles</h4><p>UV400 + Polarized</p>
+<div class="price">₹599 <span style="color:gray;text-decoration:line-through;font-size:11px">₹999</span> <span class="offer">40% off</span></div>
+<button style="width:100%;background:#ff9f00;color:white;border:none;padding:6px;border-radius:2px;margin-top:6px">Add to Cart</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400">
+<h4>Sports Blue Goggles</h4><p>Extra Clear</p><div class="price">₹699</div>
+<button style="width:100%;background:#ff9f00;color:white;border:none;padding:6px;border-radius:2px;margin-top:6px">Add to Cart</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605600659908-0ef719419d41?w=400">
+<h4>Axomiya Gamosa</h4><p>Handwoven</p><div class="price">₹499</div>
+<button style="width:100%;background:#ff9f00;color:white;border:none;padding:6px;border-radius:2px;margin-top:6px">Add to Cart</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400">
+<h4>Assam Tea Premium</h4><p>250g Single Estate</p><div class="price">₹350</div>
+<button style="width:100%;background:#ff9f00;color:white;border:none;padding:6px;border-radius:2px;margin-top:6px">Add to Cart</button>
+</div>
+</div>
+</div>
+</body>
+</html>
